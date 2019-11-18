@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+    font-family: 'Mansalva', cursive;
+}
+
+.app {
+    padding: 1rem;
+    max-width: 600px;
+    background-color: #3A506B;
+    height: 550px;
+
+}
+
+.inputs-area {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    min-width: 360px;
+}
+
+.input-todo {
+    height: 100%;
+    border: none;
+    background-color: #273E47;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    font-family: 'Mansalva', cursive;
+}
+
+.btn-add-todo {
+    height: 100%;
+    padding: 1rem;
+    background-color: #86CB92;
+    border: none;
+    cursor: pointer;
+    font-family: 'Mansalva', cursive;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #273E47;
+    height: 400px;
+    margin-top: 1rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 0 1rem;
+
+
+}
+
+.todo-item {
+    position: relative;
+    min-width: 100px;
+    display: inline-block;
+    padding: 1rem .4rem;
+    background-color: #ECA72C;
+    margin: .5rem 0;
+    word-break: break-all;
+}
+
+.btn-delete-todo {
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    margin-bottom: -15px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #71B48D;
+}
+
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #86CB92;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #71B48D;
+}

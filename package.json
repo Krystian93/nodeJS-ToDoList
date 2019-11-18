@@ -1,0 +1,32 @@
+{
+  "name": "full-stack-todo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./scripts/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./scripts/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Krystian93:WUR5TEwNJzkaQ}_X@github.com/Krystian93/Todos.git"
+  },
+  "keywords": [
+    "todo",
+    "node",
+    "mongodb"
+  ],
+  "author": "Krystian Wójcicki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Krystian93/Todos/issues"
+  },
+  "homepage": "https://github.com/Krystian93/Todos#readme",
+  "devDependencies": {
+    "eslint": "^6.5.1"
+  },
+  "dependencies": {
+    "mongoose": "^5.7.4",
+    "strapi-hook-mongoose": "^3.0.0-beta.16.8"
+  }
+}
