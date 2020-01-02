@@ -4,10 +4,10 @@ const getFile = require("./helper/getFile.js");
 
 const mongoose = require("mongoose");
 const hostname = "0.0.0.0";
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 //mLab database URI 
-const MONGOLAB_URI = "" // enter key and connect to mongo db
+const MONGOLAB_URI = "mongodb://localhost:27017/NodeTodoList" // enter key and connect to mongo db
 
 
 module.exports = MONGOLAB_URI;

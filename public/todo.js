@@ -9,7 +9,7 @@ function deleteTodo() {
     }
     //post new todo to the server
     //'https://pure-node-todo.herokuapp.com/delete-todo'
-    fetch('http://localhost:3000/delete-todo', {
+    fetch('http://localhost:4000/delete-todo', {
         method: 'POST',
         'Content-Type': 'application/json',
 
@@ -36,7 +36,7 @@ function initDeleteBtn() {
 
 //returning promise
 function getAllTodos() {
-    const todos = fetch('http://localhost:3000/get-todos')
+    const todos = fetch('http://localhost:4000/get-todos')
         .then(response => response.json());
     return todos;
 }
@@ -56,7 +56,7 @@ function addTodo() {
             title: value,
         }
         //post new todo to the server
-        fetch('http://localhost:3000/add-todo', {
+        fetch('http://localhost:4000/add-todo', {
             method: 'POST',
             'Content-Type': 'application/json',
 
